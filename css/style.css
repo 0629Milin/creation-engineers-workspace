@@ -153,6 +153,12 @@
   z-index: 999;
   backdrop-filter: blur(6px); /* Optional: for a frosted glass effect */
   }
+
+  /* Make text uppercase without changing layout */
+.navbar-brand-2 .uppercase-text, 
+.header-top .navbar-brand .uppercase-text {
+    text-transform: uppercase;
+}
   
   /* Show submenu on hover */
   .dropdown-submenu:hover .submenu {
