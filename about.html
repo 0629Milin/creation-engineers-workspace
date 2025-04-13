@@ -114,10 +114,6 @@
     </div>
     <!-- Banner End -->
 
-    <!-- Products Start -->
-    <div id="products"></div>
-    <!-- Products End -->
-
     <!-- FAQ Start -->
     <div class="container-fluid faq-section bg-light py-5">
         <div class="container py-5">
@@ -241,8 +237,8 @@
     <!-- Copyright End -->
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+    
+    
 
 
     <!-- JavaScript Libraries -->
@@ -273,12 +269,6 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById('about').innerHTML = data;
-            });
-
-        fetch('pages/products.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('products').innerHTML = data;
             });
     </script>
 </body>
