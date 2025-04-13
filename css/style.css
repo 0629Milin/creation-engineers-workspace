@@ -154,6 +154,16 @@
   backdrop-filter: blur(6px); /* Optional: for a frosted glass effect */
   }
 
+  /* Make the company name appear smaller and centered below the logo on mobile screens */
+.navbar-brand-2 .small-text {
+    font-size: 0.9rem; /* Small font size for mobile */
+    text-align: left; /* Center align text under the logo */
+    color: var(--bs-light); /* Optional: Change color to match the theme */
+    margin-top: 5px; /* Give some space between the logo and company name */
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
   /* Make text uppercase without changing layout */
 .navbar-brand-2 .uppercase-text, 
 .header-top .navbar-brand .uppercase-text {
@@ -448,8 +458,8 @@
     position: relative;
 }
 
-.hero-bg-half-1 {
-    background-image: url(../img/header-2.jpg);
+/* .hero-bg-half-1 {
+    background-image: url(../img/banner-1.png);
     clip-path: polygon(37% 0%, 100% 0%, 100% 100%, 0% 100%);
     filter: grayscale(10%);
     transform: scale(100% - 50%);
@@ -461,10 +471,24 @@
     height: 100%;
     right: 0;
     top: 0;
+} */
+
+.hero-bg-half-1 {
+    background-image: url(../img/banner-1.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 1; /* Optional: You can reduce opacity slightly if it's too bold */
 }
 
 .hero-bg-half-2 {
-    background-image: url(../img/header-1.jpg);
+    background-image: url(../img/banner-2.png);
     clip-path: polygon(37% 0%, 100% 0%, 100% 100%, 0% 100%);
     filter: grayscale(10%);
     transform: scale(100% - 50%);
@@ -472,7 +496,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    width: 58%;
+    width: 62.8%;
     height: 100%;
     right: 0;
     top: 0;
