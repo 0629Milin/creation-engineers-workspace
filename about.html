@@ -1,407 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Creation Engineers</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+<head>
+    <meta charset="utf-8">
+    <title>Creation Engineers</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-        <!-- Favicons -->
-        <link href="img/website_icon.ico" rel="icon">
-        <link href="img/website_icon.ico" rel="creation-engineer-icon">
+    <!-- Favicons -->
+    <link href="img/website_icon.ico" rel="icon">
+    <link href="img/website_icon.ico" rel="creation-engineer-icon">
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Edu+TAS+Beginner:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Edu+TAS+Beginner:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-        <!-- Libraries Stylesheet -->
-        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
-    <body>
+<body>
 
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
-        <!-- Spinner End -->
+    </div>
+    <!-- Spinner End -->
 
-        <!-- Navbar & Hero Start -->
-        <div id="navbar"></div>
-        <!-- Navbar & Hero End -->
+    <!-- Navbar & Hero Start -->
+    <div id="navbar"></div>
+    <!-- Navbar & Hero End -->
 
-        <!-- Modal Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center bg-primary">
-                        <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i class="fa fa-search"></i></span>
-                        </div>
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center bg-primary">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i
+                                class="fa fa-search"></i></span>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal Search End -->
+    </div>
+    <!-- Modal Search End -->
 
 
-        <!-- Header Start -->
-        <div class="container-fluid bg-breadcrumb">
-            <div class="container text-center py-5" style="max-width: 900px;">
-                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">About Us</h4>
-                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active text-primary">About</li>
-                </ol>    
-            </div>
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">About Us</h4>
+            <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item active text-primary">About</li>
+            </ol>
         </div>
-        <!-- Header End -->
+    </div>
+    <!-- Header End -->
 
 
-        <!-- About Start -->
-        <div id="about"></div>
-        <!-- About End -->
+    <!-- About Start -->
+    <div id="about"></div>
+    <!-- About End -->
 
 
-        <!-- Banner Start -->
-         <div class="container-fluid banner py-5 wow zoomIn" data-wow-delay="0.2s">
-            <div class="banner-design-1"></div>
-            <div class="banner-design-2"></div>
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-8">
-                        <div class="">
-                            <h4 class="text-white">Contact With Me</h4>
-                            <h1 class="display-4 text-white mb-0">We provide professional electric services for our customer</h1>
-                        </div>
+    <!-- Banner Start -->
+    <div class="container-fluid banner py-5 wow zoomIn" data-wow-delay="0.2s">
+        <div class="banner-design-1"></div>
+        <div class="banner-design-2"></div>
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <div class="">
+                        <h4 class="text-white">Contact With Me</h4>
+                        <h1 class="display-4 text-white mb-0">We provide professional electric services for our customer
+                        </h1>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="d-flex align-items-center justify-content-lg-end h-100">
-                            <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="#">EXPLORE MORE</a>
-                        </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center justify-content-lg-end h-100">
+                        <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="#">EXPLORE MORE</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Banner End -->
+    </div>
+    <!-- Banner End -->
 
-        <!-- Products Start -->
-        <div class="container-fluid projects bg-light py-5">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <!-- Sidebar Content -->
-                    <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
-                        <div>
-                            <h4 class="text-primary">Our Products</h4>
-                            <h1 class="display-4 mb-4">Explore Our Range of Products</h1>
-                            <p class="mb-5">Discover high-performance transformers, reactors, and current transformers designed for industrial excellence.</p>
-                            <ul class="nav flex-column">
-                                <!-- Transformers Tab -->
-                                <li class="nav-item bg-white mb-4">
-                                    <a class="d-flex align-items-center h4 mb-0 p-3 active" data-bs-toggle="pill" href="#ProductsTab-1">
-                                        <div class="projects-icon btn-md-square bg-primary text-white me-3">
-                                            <i class="fas fa-plug small"></i>
-                                        </div>
-                                        <span>Transformers</span>
-                                    </a>
-                                </li>
-                                <!-- Reactors Tab -->
-                                <li class="nav-item bg-white mb-4">
-                                    <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProductsTab-2">
-                                        <div class="projects-icon btn-md-square bg-primary text-white me-3">
-                                            <i class="fas fa-drafting-compass small"></i>
-                                        </div>
-                                        <span>Reactors</span>
-                                    </a>
-                                </li>
-                                <!-- Current/Potential Transformers Tab -->
-                                <li class="nav-item bg-white mb-4">
-                                    <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProductsTab-3">
-                                        <div class="projects-icon btn-md-square bg-primary text-white me-3">
-                                            <i class="fas fa-tachometer-alt small"></i>
-                                        </div>
-                                        <span>Current/Potential Transformers (CT/PT)</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+    <!-- Products Start -->
+    <div id="products"></div>
+    <!-- Products End -->
 
-                    <!-- Product Details -->
-                    <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.2s">
-                        <div class="tab-content">
-                            <!-- Transformers Tab -->
-                            <div id="ProductsTab-1" class="tab-pane fade show active p-0">
-                                <div class="projects-item">
-                                    <h4 class="mb-3">Auto Transformer</h4>
-                                    <p class="mb-4">Auto Transformers are ideal for efficient voltage regulation, offering a compact and cost-effective solution for a variety of applications.</p>
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <th>Feature</th>
-                                                <th>Description</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Design</td>
-                                                <td>Lightweight and compact design</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Efficiency</td>
-                                                <td>High efficiency (98%)</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Voltage Conversion</td>
-                                                <td>Step-up and step-down voltage conversion</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="projects-item mt-5">
-                                    <h4 class="mb-3">Control Transformer</h4>
-                                    <p class="mb-4">Reliable voltage regulation for sensitive control circuits, ensuring stability in industrial environments.</p>
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <th>Feature</th>
-                                                <th>Description</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Capacity</td>
-                                                <td>High overload capacity</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Design</td>
-                                                <td>Compact and durable design</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Impedance</td>
-                                                <td>Low impedance for superior voltage regulation</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <!-- Reactors Tab -->
-                            <div id="ProductsTab-2" class="tab-pane fade p-0">
-                                <div class="projects-item">
-                                    <h4 class="mb-3">Load Reactor</h4>
-                                    <p class="mb-4">Improves system performance by reducing harmonic distortion and voltage spikes.</p>
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <th>Feature</th>
-                                                <th>Description</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Current Handling</td>
-                                                <td>Handles high current loads</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Distortion</td>
-                                                <td>Reduces harmonic distortion</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Motor Control</td>
-                                                <td>Enhances motor control</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="projects-item mt-5">
-                                    <h4 class="mb-3">Line Reactor</h4>
-                                    <p class="mb-4">Protects equipment by reducing electrical noise and managing inrush currents.</p>
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <th>Feature</th>
-                                                <th>Description</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Protection</td>
-                                                <td>Protects sensitive electronics</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Inrush Current</td>
-                                                <td>Reduces inrush current</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Longevity</td>
-                                                <td>Ensures equipment longevity</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <!-- Current/Potential Transformers Tab -->
-                            <div id="ProductsTab-3" class="tab-pane fade p-0">
-                                
-                                <div class="projects-item">
-                                    <h4 class="mb-3">Current Transformer (CT)</h4>
-                                    <p class="mb-4">Used for accurate current measurement and monitoring in power systems.</p>
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <th>Feature</th>
-                                                <th>Description</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Accuracy</td>
-                                                <td>High accuracy (Class 0.5, 1.0)</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Design</td>
-                                                <td>Compact and durable</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Application</td>
-                                                <td>Suitable for metering and protection relays</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="projects-item">
-                                    <h4 class="mb-3">Potential Transformer (PT)</h4>
-                                    <p class="mb-4">Used for accurate voltage measurement and protection in power systems.</p>
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <th>Feature</th>
-                                                <th>Description</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Accuracy</td>
-                                                <td>High accuracy (Class 0.5, 1.0)</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Design</td>
-                                                <td>Compact, reliable, and durable</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Application</td>
-                                                <td>Suitable for metering, protection, and synchronization</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Voltage Level</td>
-                                                <td>Up to 0.66KV</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Insulation</td>
-                                                <td>Class B, F, H</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Customization</td>
-                                                <td>Available as 1-phase or 3-phase, Customizable</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- FAQ Start -->
+    <div class="container-fluid faq-section bg-light py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+                    <h4 class="text-primary">Some Important FAQ's</h4>
+                    <h1 class="display-4 mb-4">Common Frequently Asked Questions?</h1>
+                    <p class="mb-4">
+                        Our FAQ section provides insights into the key aspects of our transformer solutions, addressing
+                        common queries related to product quality, customization, and industry applications. We are
+                        committed to delivering high-performance, reliable transformers tailored to meet the specific
+                        needs of various industries. If you have any further questions, feel free to reach out to us
+                        directly.
+                    </p>
+                    <a class="btn btn-primary py-3 px-5" href="contact.html">Have Any Questions</a>
                 </div>
-            </div>
-        </div>
-        <!-- Products End -->
-
-
-        <!-- FAQ Start -->
-        <div class="container-fluid faq-section bg-light py-5">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
-                        <h4 class="text-primary">Some Important FAQ's</h4>
-                        <h1 class="display-4 mb-4">Common Frequently Asked Questions?</h1>
-                        <p class="mb-4">
-                            Our FAQ section provides insights into the key aspects of our transformer solutions, addressing common queries related to product quality, customization, and industry applications. We are committed to delivering high-performance, reliable transformers tailored to meet the specific needs of various industries. If you have any further questions, feel free to reach out to us directly.
-                        </p>
-                        <a class="btn btn-primary py-3 px-5" href="contact.html">Have Any Questions</a>
-                    </div>
-                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
-                        <div class="h-100">
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Q: What makes your transformers stand out from others in the market?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show active" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            A: Our transformers are designed with precision engineering, ensuring reliability, durability, and superior performance under diverse operating conditions. We adhere to stringent quality standards, guaranteeing products that consistently exceed expectations and deliver long-term value.
-                                        </div>
+                <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
+                    <div class="h-100">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Q: What makes your transformers stand out from others in the market?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show active"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        A: Our transformers are designed with precision engineering, ensuring
+                                        reliability, durability, and superior performance under diverse operating
+                                        conditions. We adhere to stringent quality standards, guaranteeing products that
+                                        consistently exceed expectations and deliver long-term value.
                                     </div>
                                 </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Q: Do you provide customized transformer solutions for industries?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            A: Yes, we specialize in providing tailor-made transformer solutions to meet the unique requirements of various industries. Our team works closely with clients to understand their needs and deliver products that ensure optimal performance and efficiency.
-                                        </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Q: Do you provide customized transformer solutions for industries?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        A: Yes, we specialize in providing tailor-made transformer solutions to meet the
+                                        unique requirements of various industries. Our team works closely with clients
+                                        to understand their needs and deliver products that ensure optimal performance
+                                        and efficiency.
                                     </div>
                                 </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Q: How do you ensure the quality and durability of your transformers?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            A: We maintain stringent quality standards at every stage of production, from design to manufacturing. Each transformer undergoes rigorous testing to ensure it performs reliably under all conditions, delivering exceptional value and longevity.
-                                        </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Q: How do you ensure the quality and durability of your transformers?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        A: We maintain stringent quality standards at every stage of production, from
+                                        design to manufacturing. Each transformer undergoes rigorous testing to ensure
+                                        it performs reliably under all conditions, delivering exceptional value and
+                                        longevity.
                                     </div>
                                 </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFour">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                            Q: What industries can benefit from your transformer solutions?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            A: Our transformers are designed to cater to a wide range of industries, including power generation, manufacturing, renewable energy, and more. Whether it’s a standard or customized solution, we provide products that empower industries with unmatched performance and reliability.
-                                        </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Q: What industries can benefit from your transformer solutions?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        A: Our transformers are designed to cater to a wide range of industries,
+                                        including power generation, manufacturing, renewable energy, and more. Whether
+                                        it’s a standard or customized solution, we provide products that empower
+                                        industries with unmatched performance and reliability.
                                     </div>
                                 </div>
                             </div>
@@ -410,66 +212,75 @@
                 </div>
             </div>
         </div>
-        <!-- FAQ End -->
+    </div>
+    <!-- FAQ End -->
 
-        <!-- Footer Start -->
-        <div id="footer"></div>
-        <!-- Footer End -->
+    <!-- Footer Start -->
+    <div id="footer"></div>
+    <!-- Footer End -->
 
-        
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Creation Engineers</a>, All right reserved.</span>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end text-body">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        <!-- Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a> -->
-                    </div>
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-body"><a href="#" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>Creation Engineers</a>, All right
+                        reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end text-body">
+                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    <!-- Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a> -->
                 </div>
             </div>
         </div>
-        <!-- Copyright End -->
+    </div>
+    <!-- Copyright End -->
 
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
 
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-        <script>
-            fetch('shared/navbar.html')
-              .then(response => response.text())
-              .then(data => {
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        fetch('shared/navbar.html')
+            .then(response => response.text())
+            .then(data => {
                 document.getElementById('navbar').innerHTML = data;
-              });
+            });
 
-              fetch('shared/footer.html')
-              .then(response => response.text())
-              .then(data => {
+        fetch('shared/footer.html')
+            .then(response => response.text())
+            .then(data => {
                 document.getElementById('footer').innerHTML = data;
-              });
+            });
 
-              fetch('pages/about.html')
-              .then(response => response.text())
-              .then(data => {
+        fetch('pages/about.html')
+            .then(response => response.text())
+            .then(data => {
                 document.getElementById('about').innerHTML = data;
-              });
-        </script>
-    </body>
+            });
+
+        fetch('pages/products.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('products').innerHTML = data;
+            });
+    </script>
+</body>
 
 </html>
