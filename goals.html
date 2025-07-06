@@ -1,201 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Creation Engineers</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+<head>
+    <meta charset="utf-8">
+    <title>Creation Engineers</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-        <!-- Favicons -->
-        <link href="img/website_icon.ico" rel="icon">
-        <link href="img/website_icon.ico" rel="creation-engineer-icon">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RXS2Q2FTMZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Edu+TAS+Beginner:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        gtag('config', 'G-RXS2Q2FTMZ');
+    </script>
 
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link href="img/website_icon.ico" rel="icon">
+    <link href="img/website_icon.ico" rel="creation-engineer-icon">
 
-        <!-- Libraries Stylesheet -->
-        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Edu+TAS+Beginner:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
-    <body>
+<body>
 
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+    <!-- Navbar & Hero Start -->
+    <div id="navbar"></div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center bg-primary">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i
+                                class="fa fa-search"></i></span>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- Spinner End -->
+    </div>
+    <!-- Modal Search End -->
 
-        
 
-       <!-- Navbar & Hero Start -->
-        <div id="navbar"></div>
-        <!-- Navbar & Hero End -->
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Goals and Vision</h4>
+            <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item active text-primary">Goals</li>
+            </ol>
+        </div>
+    </div>
+    <!-- Header End -->
 
-        <!-- Modal Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center bg-primary">
-                        <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i class="fa fa-search"></i></span>
+
+    <!-- Goals/Vision Start -->
+    <div class="container-fluid testimonial bg-dark py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 col-xl-5 wow fadeInUp" data-wow-delay="0.2s">
+                    <h4 class="text-primary">Goals and Vision</h4>
+                    <h1 class="display-4 text-white mb-4">Powering Progress with Reliable Transformers</h1>
+                    <p class="mb-4">
+                        To be a global leader in transformer manufacturing, delivering cutting-edge, efficient, and
+                        sustainable electrical solutions. We aim to innovate and set benchmarks in quality and
+                        reliability, empowering industries to operate seamlessly and safely in an ever-evolving
+                        technological landscape.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-xl-7 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item">
+                            <div class="testimonial-quote"><i class="fa fa-quote-right fa-2x"></i></div>
+                            <div class="testimonial-inner p-4">
+                                <div class="ms-4">
+                                    <h5>Our Vision</h5>
+                                </div>
+                            </div>
+                            <div class="customer-text p-4">
+                                <p class="mb-0">
+                                    At <b>CREATION ENGINEERS</b>, we aim to be the global leader in Transformers and
+                                    Chokes. Our mission is to deliver innovative design, top-quality products, and
+                                    reliable performance. By merging advanced engineering with the latest technology, we
+                                    offer solutions that drive industries forward and promote sustainable growth.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="testimonial-quote"><i class="fa fa-quote-right fa-2x"></i></div>
+                            <div class="testimonial-inner p-4">
+                                <div class="ms-4">
+                                    <h5>Our Commitment to Quality</h5>
+                                </div>
+                            </div>
+                            <div class="customer-text p-4">
+                                <p class="mb-0">
+                                    Reliability is key in power solutions, which is why every <b>CREATION ENGINEERS</b>
+                                    product undergoes strict quality checks. From sourcing raw materials to final
+                                    inspection, we follow rigorous standards. Our clients trust us for dependable
+                                    products, prompt delivery, and dedicated customer service.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="testimonial-quote"><i class="fa fa-quote-right fa-2x"></i></div>
+                            <div class="testimonial-inner p-4">
+                                <div class="ms-4">
+                                    <h5>Why Choose Us?</h5>
+                                </div>
+                            </div>
+                            <div class="customer-text p-4">
+                                <p class="mb-0">
+                                    Partnering with <b>CREATION ENGINEERS</b> means choosing a team that understands the
+                                    demands of modern industries. Our skilled professionals combine experience and
+                                    innovation to deliver products built to exact specifications. We go the extra mile
+                                    to ensure your project runs efficiently and meets performance goals.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="testimonial-quote"><i class="fa fa-quote-right fa-2x"></i></div>
+                            <div class="testimonial-inner p-4">
+                                <div class="ms-4">
+                                    <h5>Our Expertise</h5>
+                                </div>
+                            </div>
+                            <div class="customer-text p-4">
+                                <p class="mb-0">
+                                    <b>CREATION ENGINEERS</b> specializes in custom and standard power components for
+                                    industries like electrical, automotive, and manufacturing. We tailor solutions to
+                                    meet your technical goals and ensure top performance. Count on us for precision,
+                                    quality, and support that empowers your business.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal Search End -->
+    </div>
+    <!-- Goals/Vision End -->
+
+    <!-- Footer Start -->
+    <div id="footer"></div>
+    <!-- Footer End -->
 
 
-        <!-- Header Start -->
-        <div class="container-fluid bg-breadcrumb">
-            <div class="container text-center py-5" style="max-width: 900px;">
-                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Goals and Vision</h4>
-                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active text-primary">Goals</li>
-                </ol>    
-            </div>
-        </div>
-        <!-- Header End -->
 
 
-        <!-- Goals/Vision Start -->
-        <div class="container-fluid testimonial bg-dark py-5">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-6 col-xl-5 wow fadeInUp" data-wow-delay="0.2s">
-                        <h4 class="text-primary">Goals and Vision</h4>
-                        <h1 class="display-4 text-white mb-4">Powering Progress with Reliable Transformers</h1>
-                        <p class="mb-4">
-                            To be a global leader in transformer manufacturing, delivering cutting-edge, efficient, and sustainable electrical solutions. We aim to innovate and set benchmarks in quality and reliability, empowering industries to operate seamlessly and safely in an ever-evolving technological landscape.
-                        </p>
-                    </div>
-                    <div class="col-lg-6 col-xl-7 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="owl-carousel testimonial-carousel">
-                            <div class="testimonial-item">
-                                <div class="testimonial-quote"><i class="fa fa-quote-right fa-2x"></i></div>
-                                <div class="testimonial-inner p-4">
-                                    <div class="ms-4">
-                                        <h5>Our Vision</h5>
-                                    </div>
-                                </div>
-                                <div class="customer-text p-4">
-                                    <p class="mb-0">
-                                        At <b>CREATION ENGINEERS</b>, we aim to be the global leader in Transformers and Chokes. Our mission is to deliver innovative design, top-quality products, and reliable performance. By merging advanced engineering with the latest technology, we offer solutions that drive industries forward and promote sustainable growth.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="testimonial-item">
-                                <div class="testimonial-quote"><i class="fa fa-quote-right fa-2x"></i></div>
-                                <div class="testimonial-inner p-4">
-                                    <div class="ms-4">
-                                        <h5>Our Commitment to Quality</h5>
-                                    </div>
-                                </div>
-                                <div class="customer-text p-4">
-                                    <p class="mb-0">
-                                        Reliability is key in power solutions, which is why every <b>CREATION ENGINEERS</b> product undergoes strict quality checks. From sourcing raw materials to final inspection, we follow rigorous standards. Our clients trust us for dependable products, prompt delivery, and dedicated customer service.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="testimonial-item">
-                                <div class="testimonial-quote"><i class="fa fa-quote-right fa-2x"></i></div>
-                                <div class="testimonial-inner p-4">
-                                    <div class="ms-4">
-                                        <h5>Why Choose Us?</h5>
-                                    </div>
-                                </div>
-                                <div class="customer-text p-4">
-                                    <p class="mb-0">
-                                        Partnering with <b>CREATION ENGINEERS</b> means choosing a team that understands the demands of modern industries. Our skilled professionals combine experience and innovation to deliver products built to exact specifications. We go the extra mile to ensure your project runs efficiently and meets performance goals.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="testimonial-item">
-                                <div class="testimonial-quote"><i class="fa fa-quote-right fa-2x"></i></div>
-                                <div class="testimonial-inner p-4">
-                                    <div class="ms-4">
-                                        <h5>Our Expertise</h5>
-                                    </div>
-                                </div>
-                                <div class="customer-text p-4">
-                                    <p class="mb-0">
-                                        <b>CREATION ENGINEERS</b> specializes in custom and standard power components for industries like electrical, automotive, and manufacturing. We tailor solutions to meet your technical goals and ensure top performance. Count on us for precision, quality, and support that empowers your business.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Goals/Vision End -->
-
-        <!-- Footer Start -->
-        <div id="footer"></div>
-        <!-- Footer End -->
-
-        
-        
-
-         
 
 
-        
 
 
-        
-           
 
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-        <script>
-            fetch('shared/navbar.html')
-              .then(response => response.text())
-              .then(data => {
+
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        fetch('shared/navbar.html')
+            .then(response => response.text())
+            .then(data => {
                 document.getElementById('navbar').innerHTML = data;
-              });
+            });
 
-              fetch('shared/footer.html')
-              .then(response => response.text())
-              .then(data => {
+        fetch('shared/footer.html')
+            .then(response => response.text())
+            .then(data => {
                 document.getElementById('footer').innerHTML = data;
-              });
-        </script>
-    </body>
+            });
+    </script>
+</body>
 
 </html>
