@@ -1,198 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Creation Engineers</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+<head>
+    <meta charset="utf-8">
+    <title>Creation Engineers</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-        <!-- Favicons -->
-        <link href="img/website_icon.ico" rel="icon">
-        <link href="img/website_icon.ico" rel="creation-engineer-icon">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RXS2Q2FTMZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Edu+TAS+Beginner:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        gtag('config', 'G-RXS2Q2FTMZ');
+    </script>
 
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link href="img/website_icon.ico" rel="icon">
+    <link href="img/website_icon.ico" rel="creation-engineer-icon">
 
-        <!-- Libraries Stylesheet -->
-        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Edu+TAS+Beginner:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
-    <body>
+<body>
 
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
-        <!-- Spinner End -->
+    </div>
+    <!-- Spinner End -->
 
-        <!-- Navbar & Hero Start -->
-        <div id="navbar"></div>
-        <!-- Navbar & Hero End -->
+    <!-- Navbar & Hero Start -->
+    <div id="navbar"></div>
+    <!-- Navbar & Hero End -->
 
-        <!-- Modal Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center bg-primary">
-                        <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i class="fa fa-search"></i></span>
-                        </div>
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center bg-primary">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i
+                                class="fa fa-search"></i></span>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal Search End -->
+    </div>
+    <!-- Modal Search End -->
 
 
-        <!-- Header Start -->
-        <div class="container-fluid bg-breadcrumb">
-            <div class="container text-center py-5" style="max-width: 900px;">
-                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact Us</h4>
-                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active text-primary">Contact</li>
-                </ol>    
-            </div>
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact Us</h4>
+            <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item active text-primary">Contact</li>
+            </ol>
         </div>
-        <!-- Header End -->
+    </div>
+    <!-- Header End -->
 
 
-        <!-- Contact Start -->
-        <div class="container-fluid contact bg-light py-5">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
-                        <div>
-                            <h4 class="text-primary">Contact Us</h4>
-                            <h1 class="display-4 mb-4">Illuminate Your Message Get in Contact</h1>
-                            <p class="mb-5">
-                                Contact us today to discuss your specific transformer requirements. Our team of experts will work with you to design and implement the perfect solution for your needs.
-                            </p>
-                            <div class="d-flex align-items-center mb-4">
-                                <a class="btn btn-primary btn-md-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-md-square me-3" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-primary btn-md-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+    <!-- Contact Start -->
+    <div class="container-fluid contact bg-light py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div>
+                        <h4 class="text-primary">Contact Us</h4>
+                        <h1 class="display-4 mb-4">Illuminate Your Message Get in Contact</h1>
+                        <p class="mb-5">
+                            Contact us today to discuss your specific transformer requirements. Our team of experts will
+                            work with you to design and implement the perfect solution for your needs.
+                        </p>
+                        <div class="d-flex align-items-center mb-4">
+                            <a class="btn btn-primary btn-md-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-md-square me-3" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-primary btn-md-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="d-inline-flex bg-white w-100 p-4">
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
+                                    <div>
+                                        <h4>Address</h4>
+                                        <p class="mb-0">C-93, Karelibaug Indl. Estate, Jalaram Mandir Road, Baroda - 390
+                                            018 (Gujarat)</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="row g-4">
-                                <div class="col-12">
-                                    <div class="d-inline-flex bg-white w-100 p-4">
-                                        <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
-                                        <div>
-                                            <h4>Address</h4>
-                                            <p class="mb-0">C-93, Karelibaug Indl. Estate, Jalaram Mandir Road, Baroda - 390 018 (Gujarat)</p>
-                                        </div>
+                            <div class="col-lg-12 col-xl-12">
+                                <div class="d-inline-flex bg-white w-100 p-4">
+                                    <i class="fas fa-envelope fa-2x text-primary me-4"></i>
+                                    <div>
+                                        <h4>Mail Us</h4>
+                                        <p class="mb-0">CreationEngineers7@gmail.com</p>
+                                        <p class="mb-0">creationengineers@yahoo.com</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-xl-12">
-                                    <div class="d-inline-flex bg-white w-100 p-4">
-                                        <i class="fas fa-envelope fa-2x text-primary me-4"></i>
-                                        <div>
-                                            <h4>Mail Us</h4>
-                                            <p class="mb-0">CreationEngineers7@gmail.com</p>
-                                            <p class="mb-0">creationengineers@yahoo.com</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-xl-12">
-                                    <div class="d-inline-flex bg-white w-100 p-4">
-                                        <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
-                                        <div>
-                                            <h4>Telephone</h4>
-                                            <p class="mb-0">63531 71127  <strong>(Neel Kabra)</strong></p>
-                                            <p class="mb-0">93762 16433  <strong>(Rajesh Kabra)</strong></p>
-                                        </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-12">
+                                <div class="d-inline-flex bg-white w-100 p-4">
+                                    <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
+                                    <div>
+                                        <h4>Telephone</h4>
+                                        <p class="mb-0">63531 71127 <strong>(Neel Kabra)</strong></p>
+                                        <p class="mb-0">93762 16433 <strong>(Rajesh Kabra)</strong></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
-                        <div>
-                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdiCNXWfXn6tJ3jLThQsflJZOPyCxBr-B0eeuftOj2ydf8kGg/viewform?embedded=true" width="680" height="890" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                        </div>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
+                    <div>
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSdiCNXWfXn6tJ3jLThQsflJZOPyCxBr-B0eeuftOj2ydf8kGg/viewform?embedded=true"
+                            width="680" height="890" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                     </div>
-                    <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="h-100 overflow-hidden">
-                            <iframe class="w-100" style="height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.1328454037744!2d73.19261007506958!3d22.31081507967906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcf5b3d0f7c03%3A0xf295d18e52cb3292!2sCreation%20Engineers%20(Transformer%20manufacturer)!5e0!3m2!1sen!2sin!4v1733032351104!5m2!1sen!2sin" 
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                            
-                        </div>
+                </div>
+                <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="h-100 overflow-hidden">
+                        <iframe class="w-100" style="height: 400px;"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.1328454037744!2d73.19261007506958!3d22.31081507967906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcf5b3d0f7c03%3A0xf295d18e52cb3292!2sCreation%20Engineers%20(Transformer%20manufacturer)!5e0!3m2!1sen!2sin!4v1733032351104!5m2!1sen!2sin"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Contact End -->
+    </div>
+    <!-- Contact End -->
 
-        <!-- Footer Start -->
-        <div id="footer"></div>
-        <!-- Footer End -->
+    <!-- Footer Start -->
+    <div id="footer"></div>
+    <!-- Footer End -->
 
-        
-        
 
-        
-           
 
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-        <script>
-            fetch('shared/navbar.html')
-              .then(response => response.text())
-              .then(data => {
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        fetch('shared/navbar.html')
+            .then(response => response.text())
+            .then(data => {
                 document.getElementById('navbar').innerHTML = data;
-              });
+            });
 
-              fetch('shared/footer.html')
-              .then(response => response.text())
-              .then(data => {
+        fetch('shared/footer.html')
+            .then(response => response.text())
+            .then(data => {
                 document.getElementById('footer').innerHTML = data;
-              });
-        </script>
-        <script>
-            fetch('shared/navbar.html')
-              .then(response => response.text())
-              .then(data => {
+            });
+    </script>
+    <script>
+        fetch('shared/navbar.html')
+            .then(response => response.text())
+            .then(data => {
                 document.getElementById('navbar').innerHTML = data;
-              });
+            });
 
-              fetch('shared/footer.html')
-              .then(response => response.text())
-              .then(data => {
+        fetch('shared/footer.html')
+            .then(response => response.text())
+            .then(data => {
                 document.getElementById('footer').innerHTML = data;
-              });
-          </script>
-    </body>
+            });
+    </script>
+</body>
 
 </html>
