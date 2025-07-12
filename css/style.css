@@ -444,7 +444,6 @@
 }
 /*** Navbar End ***/
 
-
 /*** Carousel Hero Header Start ***/
 .hero-section {
     background-image: url(../img/banner-transformer.png);
@@ -484,7 +483,7 @@
     right: 0;
     top: 0;
     z-index: 1;
-    opacity: 1; /* Optional: You can reduce opacity slightly if it's too bold */
+    opacity: 1;
 }
 
 .hero-bg-half-2 {
@@ -545,7 +544,7 @@
     bottom: 0;
 }
 
-/*** Carousel Hero Header Start ***/
+/*** Carousel Hero Header Styling ***/
 .header-carousel .header-carousel-item {
     height: 700px;
 }
@@ -591,6 +590,7 @@
     z-index: 9;
 }
 
+/*** Tablet View Adjustments ***/
 @media (max-width: 991px) {
     .header-carousel .header-carousel-item .carousel-caption {
         padding-top: 45px;
@@ -601,6 +601,51 @@
         height: 700px;
     }
 }
+
+/*** Mobile View Cleanup ***/
+@media (max-width: 768px) {
+    .hero-bg-half-1,
+    .hero-bg-half-2 {
+        display: none !important;
+    }
+
+    .hero-section {
+        background-image: url(../img/banner-transformer.png) !important;
+        background-position: center center !important;
+        background-size: cover !important;
+        height: auto !important;
+        min-height: 500px;
+    }
+
+    .carousel-caption {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 2rem 1rem !important;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .carousel-caption h2,
+    .carousel-caption h4 {
+        font-size: 1.5rem !important;
+        line-height: 1.2;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem !important;
+        line-height: 1.6;
+    }
+
+    .hero-shape-1,
+    .hero-shape-2 {
+        display: none !important;
+    }
+
+    .header-carousel .header-carousel-item {
+        height: auto !important;
+    }
+}
+
 /*** Carousel Hero Header End ***/
 
 
