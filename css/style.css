@@ -1,3 +1,4 @@
+
 /*** Spinner Start ***/
 #spinner {
     opacity: 0;
@@ -11,7 +12,6 @@
     visibility: visible;
     opacity: 1;
 }
-
 /*** Spinner End ***/
 
 .back-to-top {
@@ -127,9 +127,9 @@
 /* Position submenu to the right */
 .dropdown-submenu {
     position: relative;
-}
-
-/* .dropdown-submenu .submenu {
+  }
+  
+  /* .dropdown-submenu .submenu {
     display: none;
     position: absolute;
     left: 100%;
@@ -141,58 +141,52 @@
     z-index: 999;
   } */
 
-.dropdown-submenu .submenu {
+  .dropdown-submenu .submenu {
     display: none;
-    position: absolute;
-    left: 100%;
-    top: 0;
-    margin-top: -1px;
-    background: rgba(255, 255, 255, 0.8);
-    /* Semi-transparent white */
-    min-width: 250px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    z-index: 999;
-    backdrop-filter: blur(6px);
-    /* Optional: for a frosted glass effect */
-}
+  position: absolute;
+  left: 100%;
+  top: 0;
+  margin-top: -1px;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  min-width: 250px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  z-index: 999;
+  backdrop-filter: blur(6px); /* Optional: for a frosted glass effect */
+  }
 
-/* Make the company name appear smaller and centered below the logo on mobile screens */
+  /* Make the company name appear smaller and centered below the logo on mobile screens */
 .navbar-brand-2 .small-text {
-    font-size: 0.9rem;
-    /* Small font size for mobile */
-    text-align: left;
-    /* Center align text under the logo */
-    color: var(--bs-light);
-    /* Optional: Change color to match the theme */
-    margin-top: 5px;
-    /* Give some space between the logo and company name */
+    font-size: 0.9rem; /* Small font size for mobile */
+    text-align: left; /* Center align text under the logo */
+    color: var(--bs-light); /* Optional: Change color to match the theme */
+    margin-top: 5px; /* Give some space between the logo and company name */
     margin-left: 10px;
     text-transform: uppercase;
 }
 
-/* Make text uppercase without changing layout */
-.navbar-brand-2 .uppercase-text,
+  /* Make text uppercase without changing layout */
+.navbar-brand-2 .uppercase-text, 
 .header-top .navbar-brand .uppercase-text {
     text-transform: uppercase;
 }
-
-/* Show submenu on hover */
-.dropdown-submenu:hover .submenu {
+  
+  /* Show submenu on hover */
+  .dropdown-submenu:hover .submenu {
     display: block;
-}
-
-/* Style headers */
-.dropdown-header {
+  }
+  
+  /* Style headers */
+  .dropdown-header {
     font-weight: 600;
     color: var(--bs-primary);
     cursor: pointer;
-}
-
-/* Optional: Improve spacing */
-.dropdown-menu .dropdown-item {
+  }
+  
+  /* Optional: Improve spacing */
+  .dropdown-menu .dropdown-item {
     white-space: normal;
     padding: 10px 20px;
-}
+  }
 
 @media (min-width: 992px) {
     .header-top::before {
@@ -421,7 +415,7 @@
         padding: 40px 50px 40px 0;
         z-index: 99;
     }
-
+    
     .navbar-brand::before {
         content: "";
         position: absolute;
@@ -434,7 +428,7 @@
         transform: rotate(-18deg);
         z-index: -1;
     }
-
+    
     .navbar-brand::after {
         content: "";
         position: absolute;
@@ -448,7 +442,6 @@
         z-index: -1;
     }
 }
-
 /*** Navbar End ***/
 
 /*** Carousel Hero Header Start ***/
@@ -467,15 +460,12 @@
 .hero-section::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0; left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* adjust darkness */
+    background-color: rgba(0, 0, 0, 0.5); /* adjust darkness */
     z-index: 1;
 }
-
 .hero-section .content {
     position: relative;
     z-index: 2;
@@ -592,7 +582,6 @@
     bottom: 30px;
     left: 0;
 }
-
 .header-carousel .owl-nav .owl-next {
     bottom: 30px;
     right: 0;
@@ -630,7 +619,6 @@
 
 /*** Mobile View Cleanup ***/
 @media (max-width: 768px) {
-
     .hero-bg-half-1,
     .hero-bg-half-2 {
         display: none !important;
@@ -671,31 +659,6 @@
     .header-carousel .header-carousel-item {
         height: auto !important;
     }
-
-    .about-section-mobile-fix {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-section-mobile-fix .experience-box,
-    .about-section-mobile-fix .transformer-img {
-        position: static !important;
-        width: 100% !important;
-        margin-bottom: 1rem;
-    }
-
-    .about-section-mobile-fix .experience-box .bg-primary {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    
-    .about-section-mobile-fix img {
-    height: auto !important;
-    object-fit: contain !important;
-  }
 }
 
 /*** Carousel Hero Header End ***/
@@ -720,7 +683,6 @@
 .bg-breadcrumb .breadcrumb .breadcrumb-item a {
     color: var(--bs-white);
 }
-
 /*** Single Page Hero Header End ***/
 
 
@@ -785,7 +747,6 @@
     transform: rotate(45deg);
     z-index: 2;
 }
-
 /*** Banner End ***/
 
 /*** Service Start ***/
@@ -804,7 +765,6 @@
 .owl-stage-outer {
     margin-right: -1px;
 }
-
 .service .nav-item a.active {
     background: var(--bs-primary);
 }
@@ -838,7 +798,7 @@
         top: 0;
         left: -115px;
     }
-
+    
     .service-carousel .owl-nav .owl-next {
         bottom: 0;
         left: -115px;
@@ -849,7 +809,6 @@
     .owl-stage-outer {
         margin-bottom: 70px;
     }
-
     .service-carousel .owl-nav .owl-prev {
         bottom: -70px;
         left: 0;
@@ -865,7 +824,6 @@
         justify-content: center;
     }
 }
-
 /*** Service End ***/
 
 /*** Projects Start ***/
@@ -896,7 +854,6 @@
 .projects .nav-item a.active .projects-icon span {
     color: var(--bs-primary);
 }
-
 /*** Projects End ***/
 
 
@@ -972,7 +929,6 @@
 .blog .blog-item:hover .blog-heading a.h4:hover {
     color: var(--bs-dark);
 }
-
 /*** Blog End ***/
 
 /*** Team Start ***/
@@ -991,8 +947,7 @@
 
 .team .team-item .team-img .team-icon {
     position: absolute;
-    bottom: 20px;
-    right: -100%;
+    bottom: 20px; right: -100%;
     z-index: 9;
     transition: 0.5s;
 }
@@ -1024,7 +979,6 @@
 .team .team-item:hover .team-content {
     box-shadow: 0 0 20px rgba(0, 0, 0, .2);
 }
-
 /*** Team End ***/
 
 /*** FAQs Start ***/
@@ -1044,7 +998,6 @@
     color: var(--bs-dark);
     background: var(--bs-light);
 }
-
 /*** FAQs End ***/
 
 /*** Testimonial Start ***/
@@ -1083,7 +1036,7 @@
 }
 
 .testimonial .testimonial-item .testimonial-inner img {
-    width: 100px;
+    width: 100px; 
     height: 100px;
     border: 2px solid var(--bs-primary);
 }
@@ -1147,7 +1100,6 @@
     background: var(--bs-primary);
     transition: 0.5s;
 }
-
 /*** Testimonial End ***/
 
 /*** Footer Start ***/
@@ -1181,7 +1133,6 @@
 .footer .footer-item .footer-btn a:hover {
     color: var(--bs-primary);
 }
-
 /*** Footer End ***/
 
 /*** copyright Start ***/
@@ -1189,5 +1140,7 @@
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     background: var(--bs-dark);
 }
-
 /*** copyright end ***/
+
+
+
