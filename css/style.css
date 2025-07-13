@@ -116,12 +116,17 @@
     content: "";
     position: absolute;
     overflow: hidden;
-    width: 16%;
+    width: 30%;
     height: 100%;
     top: 0;
     left: 0;
     background: var(--bs-dark);
     z-index: 1;
+}
+
+.header-top .navbar-brand {
+    position: relative !important;
+    z-index: 10 !important;
 }
 
 /* Position submenu to the right */
