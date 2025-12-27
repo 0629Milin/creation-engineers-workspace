@@ -618,15 +618,15 @@
 
     .header-carousel.owl-carousel,
     .header-carousel .header-carousel-item {
-        height: 540px;
+        height: 600px;
     }
 
     .header-carousel .owl-nav .owl-prev {
-        bottom: 0 !important;
+        bottom: 15px !important;
     }
     
     .header-carousel .owl-nav .owl-next {
-        bottom: 0 !important;
+        bottom: 15px !important;
     }
     
 }
