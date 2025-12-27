@@ -573,7 +573,7 @@
 .header-carousel .owl-nav .owl-next {
     position: absolute;
     width: 60px;
-    height: 60px;
+    /* height: 60px; */
     background: var(--bs-white);
     color: var(--bs-primary);
     font-size: 26px;
@@ -618,8 +618,17 @@
 
     .header-carousel.owl-carousel,
     .header-carousel .header-carousel-item {
-        height: 700px;
+        height: 540px;
     }
+
+    .header-carousel .owl-nav .owl-prev {
+        bottom: 0 !important;
+    }
+    
+    .header-carousel .owl-nav .owl-next {
+        bottom: 0 !important;
+    }
+    
 }
 
 /*** Mobile View Cleanup ***/
