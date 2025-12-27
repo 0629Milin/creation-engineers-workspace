@@ -1156,5 +1156,13 @@
 }
 /*** copyright end ***/
 
-
+@media (max-width: 768px) {
+  .navbar-brand {
+    position: relative;
+    z-index: 3;
+  }
+  .navbar-toggler {
+    z-index: 2;
+  }
+}
 
