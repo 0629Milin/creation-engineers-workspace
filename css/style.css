@@ -1156,23 +1156,29 @@
 }
 /*** copyright end ***/
 
-/* Fix: make top-left logo clickable on mobile */
+/* Make top-left logo clickable on mobile without layout change */
 @media (max-width: 768px) {
 
-  .header-top .d-flex.align-items-center.h-100 {
-    pointer-events: none;
+  .header-top {
+    position: relative;
+    z-index: 20;
   }
 
   .header-top .navbar-brand {
-    pointer-events: auto;
     position: relative;
-    z-index: 3;
-    display: flex;
+    z-index: 30;
+    display: inline-flex;
     align-items: center;
   }
 
-  .navbar-toggler {
-    z-index: 2;
+  .nav-bar {
+    position: relative;
+    z-index: 10;
+  }
+
+  .header-top .navbar-brand h2 {
+    pointer-events: none;
   }
 }
+
 
