@@ -274,6 +274,9 @@
         margin-top: -20px;
     }
 
+    .dropdown-submenu:hover .submenu {
+        display: none; /* mobile should not rely on hover */
+    }
 }
 
 .nav-bar .navbar {
