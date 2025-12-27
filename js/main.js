@@ -115,6 +115,24 @@
         return false;
     });
 
+    // Mobile-friendly submenu toggle
+    $(document).ready(function() {
+        document.querySelectorAll('.dropdown-submenu > .dropdown-toggle')
+            .forEach(function(el) {
+                el.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    // Close other open submenus in the same dropdown
+                    this.closest('.dropdown-menu')
+                        .querySelectorAll('.dropdown-submenu.show')
+                        .forEach(x => x !== this.parentElement && x.classList.remove('show'));
+
+                    // Toggle current submenu
+                    this.parentElement.classList.toggle('show');
+                });
+            });
+    });
 
 })(jQuery);
 

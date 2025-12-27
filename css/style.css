@@ -274,6 +274,9 @@
         margin-top: -20px;
     }
 
+    .dropdown-submenu:hover .submenu {
+        display: none; /* mobile should not rely on hover */
+    }
 }
 
 .nav-bar .navbar {
@@ -573,7 +576,7 @@
 .header-carousel .owl-nav .owl-next {
     position: absolute;
     width: 60px;
-    height: 60px;
+    /* height: 60px; */
     background: var(--bs-white);
     color: var(--bs-primary);
     font-size: 26px;
@@ -618,8 +621,17 @@
 
     .header-carousel.owl-carousel,
     .header-carousel .header-carousel-item {
-        height: 700px;
+        height: 570px;
     }
+
+    .header-carousel .owl-nav .owl-prev {
+        bottom: 15px !important;
+    }
+    
+    .header-carousel .owl-nav .owl-next {
+        bottom: 15px !important;
+    }
+    
 }
 
 /*** Mobile View Cleanup ***/
@@ -1147,5 +1159,11 @@
 }
 /*** copyright end ***/
 
-
+@media (max-width: 768px) {
+  .navbar-brand-2 {
+    position: relative;
+    z-index: 999;
+    pointer-events: auto;
+  }
+}
 
