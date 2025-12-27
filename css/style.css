@@ -1156,24 +1156,11 @@
 }
 /*** copyright end ***/
 
-/* Mobile: use only the navbar logo + make it clickable */
 @media (max-width: 768px) {
-
-  /* Hide the big desktop logo on mobile */
-  .header-top .navbar-brand {
-    display: none;
-  }
-
-  /* Keep the navbar logo visible and tappable */
-  .nav-bar .navbar-brand {
+  .navbar-brand-2 {
     position: relative;
     z-index: 999;
     pointer-events: auto;
-  }
-
-  /* Ensure menu / collapse does NOT block logo clicks */
-  .navbar-collapse {
-    z-index: 10;
   }
 }
 
